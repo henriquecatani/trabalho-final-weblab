@@ -1,0 +1,74 @@
+.dark {
+    background-color: rgb(34, 31, 34);
+    color: antiquewhite;
+    .topo {
+        background-color: #391d3a;
+    }
+    .menu li a {
+        color: white;
+    }
+    .active {
+        background-color: #552c57;
+    }
+}
+
+.light {
+    background-color: aliceblue;
+    color: black;
+}
+
+/* fontes */
+
+/* Colocar configurações de fontes importadas aqui */
+
+/* fontes */
+
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    background: #ffffff;
+    height: 64px;
+    border-radius: 14px;
+    border: 2px solid #ce5e5e; /* Cor da borda da navbar */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+.active {
+    background-color: #e9dbff;
+    color: black
+}
+
+.menu li a:hover {
+    background: #3d3d3d;
+    color: #fff;
+}
+
+.tema {
+    margin-left: 24px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+}
