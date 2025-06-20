@@ -1,21 +1,64 @@
-.dark {
-    background-color: rgb(34, 31, 34);
-    color: antiquewhite;
-    .topo {
-        background-color: #391d3a;
-    }
-    .menu li a {
-        color: white;
-    }
-    .active {
-        background-color: #552c57;
-    }
+.trilho {
+    width: 100px;
+    height: 50px;
+    background-color: #303030;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
 }
 
-.light {
-    background-color: aliceblue;
-    color: black;
+.trilho .indicador {
+    width: 50px;
+    height: 50px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    transform: scale(0.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.75s;
 }
+.trilho.light{
+    background-color:#aaaaaa;
+}
+
+.trilho.light .indicador {
+    left: 50px;
+    background-color: rgb(0, 0, 0);
+}
+
+body{
+    background-color: rgb(22, 22, 22);
+    color: rgb(224, 216, 207);
+    .topo {
+        background-color: #3d1c3d;
+    }
+    .menu li a {
+        color: rgb(0, 0, 0);
+    }
+    .active {
+        background-color: #580258;
+        transition: 0.75s;
+    }
+    transition: 0.75s;
+}
+
+body.light{
+    background-color: rgb(255, 255, 255);
+    color: rgb(48, 45, 41);
+    .topo {
+        background-color: #e0ddb1;  
+    }
+    .menu li a {
+        color: rgb(7, 7, 7);
+    }
+    .active {
+        background-color: #dad15f;
+        transition: 0.75s;
+    }
+    transition: 0.75s;
+
+}   
 
 /* fontes */
 
@@ -51,7 +94,7 @@
 
 .menu li a {
     text-decoration: none;
-    color: #222;
+    color: #000000;
     font-weight: 500;
     padding: 8px 16px;
     border-radius: 8px;
@@ -62,13 +105,27 @@
 }
 
 .menu li a:hover {
-    background: #3d3d3d;
+    background: #aaaaaa;
     color: #fff;
 }
 
-.tema {
-    margin-left: 24px;
-    position: relative;
-    display: inline-block;
-    width: 40px;
+.divAlinhadora { /* esse div é pra alinhar a outra div */
+    display: flex;
+    justify-content: center;
+    height: 100vh  /*Ocupa a tela toda verticalmente */
+    
 }
+.classDivs {   /*esse div é a do meio */
+    width: 1000px; /* tamanho do lugar pra escrever */
+    margin-top: 75px; /* Distancia entre topo e div */
+    text-align: left; /* Textos na esquerda da div */   
+    word-break: normal; /* Toda fez que um h1 ou um p terminar ele da um <br> sem cortar a palavra ao meio */
+    border: 2px solid #563636; /* Cor da borda da div meio */
+    padding: 20px; /* Pra nao ficar grudado na borda */
+    border-radius: 14px;
+}
+.classDivs h1, h2 { /*faz os titulos h1 e h2 irem para o meio da div */
+    display: flex;
+    justify-content: center;
+}
+
