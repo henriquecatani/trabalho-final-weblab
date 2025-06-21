@@ -18,7 +18,6 @@ trilho.addEventListener('click', ()=>{
     document.getElementById("darklg").style.display = "none"
     document.getElementById("lightlg").style.display = ""
     localStorage.setItem('modo', '1')
-    OLHA O CSS DELE
 }*/
 /*function light() {
     document.body.className = "light"

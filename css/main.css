@@ -34,7 +34,7 @@ body{
         background-color: #3d1c3d;
     }
     .menu li a {
-        color: rgb(0, 0, 0);
+        color: antiquewhite;
     }
     .active {
         background-color: #580258;
