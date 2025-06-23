@@ -110,7 +110,7 @@ body.light{
 .divAlinhadora { /* esse div é pra alinhar a outra div */
     display: flex;
     justify-content: center;
-    height: 100vh  /*Ocupa a tela toda verticalmente */
+    height: 100vh  /*Ocupa a tela toda verticalmente/ Colocar height auto dps */
     
 }
 .classDivs {   /*esse div é a do meio */
