@@ -1,39 +1,15 @@
-// Estou cuidando do java script! (Otario)
 
 let trilho = document.getElementById("trilho")
 let escuro = document.querySelector('body')
-// nao chama de dark chama de escuro pra diferenciar
+let indicador = document.getElementById("themeToggleImg")
 trilho.addEventListener('click', ()=>{
-        trilho.classList.toggle('light')
-        escuro.classList.toggle('light')
+        trilho.classList.toggle('light') // muda o tema do toggle
+        escuro.classList.toggle('light') // muda o tema geral
+        if (indicador.src.endsWith("/img/light_mode.png")) { // muda o tema do icone no toggle, alterando a fonte da imagem de light pra dark e vice versa
+                indicador.src='/img/dark_mode.png'
+        }
+        else{ // quando tiver icone dark
+                indicador.src='/img/light_mode.png'
+        }
 })
 
-
-
-// Inicio das funcoes de mudar tema (modo de ícone)
-/* function dark() {
-    document.body.className = "dark"
-    document.getElementById("darktg").style.display = "none"
-    document.getElementById("lighttg").style.display = ""
-    document.getElementById("darklg").style.display = "none"
-    document.getElementById("lightlg").style.display = ""
-    localStorage.setItem('modo', '1')
-}*/
-/*function light() {
-    document.body.className = "light"
-    document.getElementById("lighttg").style.display = "none"
-    document.getElementById("darktg").style.display = ""
-    document.getElementById("darklg").style.display = ""
-    document.getElementById("lightlg").style.display = "none"
-    localStorage.setItem('modo', '0')
-}*/
-/*let mode = localStorage.getItem('modo') || '0'
-if (mode == '0') {
-        dark()
-} 
-else {
-        light()
-        
-}*/
-
-// Fim das funcoes de mudar tema (modo de ícone)
