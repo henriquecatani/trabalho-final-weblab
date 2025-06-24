@@ -12,4 +12,3 @@ trilho.addEventListener('click', ()=>{
                 indicador.src='/img/light_mode.png'
         }
 })
-

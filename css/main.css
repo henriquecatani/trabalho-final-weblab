@@ -29,7 +29,7 @@
 }
 
 body{
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(19, 24, 19);
     color: antiquewhite;
     .topo {
         background-color: #001f13;
@@ -45,7 +45,7 @@ body{
 }
 
 body.light{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(228, 255, 239);
     .topo {
         background-color: #b1e0bf;  
     }
@@ -57,7 +57,15 @@ body.light{
     :not(.active) { /* somente o botao ativo recebe a cor preta */
         color: rgb(24, 24, 24);
     }
-    
+    .mainTitulo .indice {
+        background-color: #c7dfce;
+        a {
+            color: #000000;
+        }
+        a:hover {
+            color:rgb(5, 46, 14);
+        }
+    }
     transition: 0.75s;
 
 }   
@@ -110,15 +118,14 @@ body.light{
 .divAlinhadora { /* esse div é pra alinhar a outra div */
     display: flex;
     justify-content: center;
-    height: 100vh  /*Ocupa a tela toda verticalmente/ Colocar height auto dps */
-    
+    height: auto  /*Ocupa a tela toda verticalmente*/    
 }
 .classDivs {   /*esse div é a do meio */
     width: 1000px; /* tamanho do lugar pra escrever */
     margin-top: 75px; /* Distancia entre topo e div */
     text-align: left; /* Textos na esquerda da div */   
     word-break: normal; /* Toda fez que um h1 ou um p terminar ele da um <br> sem cortar a palavra ao meio */
-    border: 2px solid #563636; /* Cor da borda da div meio */
+    border: 2px solid rgb(70, 90, 75); /* Cor da borda da div meio */
     padding: 20px; /* Pra nao ficar grudado na borda */
     border-radius: 14px;
 }
@@ -127,3 +134,42 @@ body.light{
     justify-content: center;
 }
 
+.gridTexto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    div {
+        width: 40%;
+    }
+}
+
+.mainTitulo {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        font-size: 400%;
+        margin-bottom: 0cm;
+    }
+    .indice {
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 50px;
+        flex-direction: column;
+        background-color: #303030;
+        border: #b1e0bf solid 2px;
+        border-radius: 18px;
+        width: 200px;
+        align-items: center;
+        justify-content: space-evenly;
+        a {
+            text-decoration: none !important;
+            color: antiquewhite;
+        }
+        a:hover {
+            color:#b1e0bf
+        }
+        }
+}
