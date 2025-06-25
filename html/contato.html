@@ -28,6 +28,29 @@
         <div class="classDivs ajustaBreak"> <!-- Essa div tem os textos -->
             <H1>TODO:</H1>
             <P>FORMULARIO DE CONTATO</P>
+            <article>
+                <form>
+                    <fieldset>
+                        <legend><h2 class="fonteCaprasimo">Entre em contato:</h2></legend>
+                        <label for="nome">Nome:</label>
+                        <input type="textp" name="nome" placeholder="Digite seu nome" required><br>
+                        <label for="numero"  f>Número de telefone:</label>
+                        <input name="numero" type="number" placeholder="Número" required><br>
+                        <label for="email">Email:</label>
+                        <input name="email" type="text" placeholder="e-mail" required><br>
+                        <label for="caixa">Deseja receber informações no email:</label>
+                        <input type="checkbox" value=""><br>
+                    </fieldset>
+                    <fieldset>
+                        <legend><h2 class="fonteCaprasimo">Mensagem:</h2></legend>
+                        <label for="nome" >Motivo:</label><br>
+                        <input name="nome" placeholder="Motivo da mensagem:" type="text" autocomplete="on" required/><br>
+                        <label for="mensagem" >Mensagem:</label><br>
+                        <textarea name="mensagem" placeholder="Digite sua mensagem aqui" rows="6" cols="40"></textarea>
+                        <br><input type="submit" value="Enviar">
+                    </fieldset>
+                </form>
+            </article>
         </div>  
     </div> 
     <script src="/js/javascript.js"></script>    
