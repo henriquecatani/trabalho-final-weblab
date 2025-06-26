@@ -1,36 +1,7 @@
-.trilho {
-    width: 60px;
-    height: 30px;
-    background-color: #303030;
-    border-radius: 150px;
-    position: relative;
-    cursor: pointer;
-}
-
-.trilho .indicador {
-    width: 30px;
-    height: 30px;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 50%;
-    transform: scale(0.9);
-    position: absolute;
-    left: 0;
-    top: 0;
-    transition: 0.75s;
-}
-
-.trilho.light{
-    background-color:#aaaaaa;
-}
-
-.trilho.light .indicador {
-    left: 32px; /* o quanto o icone de tema se move na mudanca de tema, metade da largura do trilho + 2px pra ficar bonito */
-    background-color: rgb(0, 0, 0);
-}
-
 .acessibilidade {
-
+    p, a {
     font-size: 120%;
+    }
 }
 body{
     background-color: rgb(19, 24, 19);
@@ -71,12 +42,44 @@ body.light{
         }
     }
     transition: 0.75s;
-
+    
 }   
+
+/* trilho: toggle para mudança de tema. */
+.trilho {
+    width: 60px;
+    height: 30px;
+    background-color: #303030;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador {
+    width: 30px;
+    height: 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    transform: scale(0.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.75s;
+}
+
+.trilho.light{
+    background-color:#aaaaaa;
+}
+
+.trilho.light .indicador {
+    left: 32px; /* o quanto o icone de tema se move na mudanca de tema, metade da largura do trilho + 2px pra ficar bonito */
+    background-color: rgb(0, 0, 0);
+}
+
+
 
 /* fontes */
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
-/* Colocar configurações de fontes importadas aqui */
 
 .fonteCaprasimo { /* Class fonte mateus */
 
@@ -84,7 +87,8 @@ body.light{
   font-weight: 400;
   font-style: normal;
 }
-/* fontes */
+
+/* fim_fontes */
 
 .topo {
     display: flex;
@@ -125,6 +129,13 @@ body.light{
     color: #fff;
 }
 
+.centralizado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .divAlinhadora { /* esse div é pra alinhar a outra div */
     display: flex;
     justify-content: center;
@@ -152,16 +163,15 @@ body.light{
         width: 40%;
     }
 }
-
+.tituloGrande {
+    font-size: 400%;
+    margin-bottom: 0cm;
+}
 .mainTitulo {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    h1 {
-        font-size: 400%;
-        margin-bottom: 0cm;
-    }
     .indice {
         display: flex;
         padding-top: 10px;
