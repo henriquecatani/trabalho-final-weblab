@@ -12,3 +12,7 @@ trilho.addEventListener('click', ()=>{
                 indicador.src='/img/light_mode.png'
         }
 })
+
+function ativaAcessibilidade() {
+        document.body.classList.toggle('acessibilidade')
+}
