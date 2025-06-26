@@ -106,6 +106,12 @@ body.light{
 .logo img {
     height: 60px;
 }
+.classImagemFotos { /* para ajeitar as fotos de perfil */
+    display: flex;
+    width: 250px;
+    height: 300px;
+    border-radius: 50%;
+}
 
 .menu {
     display: flex;
