@@ -3,31 +3,31 @@
     font-size: 120%;
     }
 }
-body{
+body{ /* cores do modo claro */
     background-color: rgb(19, 24, 19);
     color: antiquewhite;
-    .topo {
+    .topo { /* navbar */
         background-color: #001f13;
     }
-    .menu li a {
+    .menu li a { /* cor do texto dos botoes da navbar */
         color: antiquewhite;
     }
-    .active {
+    .active { /* cor do botao da pagina ativa */
         background-color: rgb(70, 90, 75);
         transition: 0.75s;
     }
     a {
     color: antiquewhite;
-    }
+    } /* remove cor azul de links e adiciona efeito hover */
     a:hover {
         color:#c7dfce;
     }
     transition: 0.75s;
 }
 
-body.light{
+body.light{ /* cores do modo claro */
     background-color: rgb(228, 255, 239);
-    .topo {
+    .topo { /* cor da navbar */
         background-color: #b1e0bf;  
     }
     .active {
@@ -35,12 +35,12 @@ body.light{
         transition: 0.75s;
         color: antiquewhite;
     }
-    :not(.active) { /* somente o botao ativo recebe a cor preta */
+    :not(.active) { /* somente o botao ativo recebe a cor branca */
         color: rgb(24, 24, 24);
     }
-    .mainTitulo .indice {
+    .mainTitulo .indice { /* cores do indice que fica na classe mainTitulo */
         background-color: #c7dfce;
-        a {
+        a { /* cores dos links no indice */
             color: #000000;
         }
         a:hover {
@@ -51,7 +51,7 @@ body.light{
         background-color: #b1e0bf;
     }
     transition: 0.75s;
-    a {
+    a { /* cores dos links modo claro */
         color: #000000;
     }
     a:hover {
@@ -70,7 +70,7 @@ body.light{
     cursor: pointer;
 }
 
-.trilho .indicador {
+.trilho .indicador { /* bolinha do trilho */
     width: 30px;
     height: 30px;
     background-color: hsl(0, 0%, 100%);
@@ -96,7 +96,7 @@ body.light{
 /* fontes */
 @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 
-.fonteCaprasimo { /* Class fonte mateus */
+.fonteCaprasimo { /* Class fonte*/
 
   font-family: "Caprasimo", serif;
   font-weight: 400;
@@ -107,10 +107,10 @@ body.light{
 
 
 
-.topo {
+.topo { /* estilo da navbar */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center; /* no ventro verticalmente */
+    justify-content: space-between; /* ajusta o espaço de acordo com os elementos adicionados */
     padding: 0 52px; /* padding topo e lados */
     height: 64px;
     border-radius: 14px;
@@ -119,24 +119,20 @@ body.light{
     transition: all 0.3s ease;
 }
 
-.logo img {
-    height: 60px;
-}
 
-
-.menu {
+.menu { /* lista de botoes para mudar de pagina */
     display: flex;
     gap: 32px;
-    list-style: none;
+    list-style: none; /* remove marcadores, como • ou 1- */
     margin: 0;
     padding: 0;
     
 }
 
 .menu li a {
-    text-decoration: none;
+    text-decoration: none; /* sem estilo nos links */
     color: #000000;
-    font-weight: 500;
+    font-weight: 500; /* quase negrito */
     padding: 8px 16px;
     border-radius: 8px;
 }
@@ -146,7 +142,7 @@ body.light{
     color: #fff;
 }
 
-.centralizado {
+.centralizado { /* div centralizada */
     padding-top: 150px;
     display: flex;
     align-items: center;
@@ -160,7 +156,7 @@ body.light{
     width: 200px;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /* organiza o espaço dos itens dentro do botao */
     background-color: #303030;
     border: 2px solid #b1e0bf;
     border-radius: 14px;
@@ -190,7 +186,7 @@ body.light{
     justify-content: center;
 }
 
-.gridTexto {
+.gridTexto { /* textos um ao lado do outro no fim da pag inicial */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -220,7 +216,7 @@ body.light{
         align-items: center;
         justify-content: space-evenly;
         a {
-            text-decoration: none !important; /*remove decoração do link*/
+            text-decoration: none !important; /*remove decoração do link no indice*/
             color: antiquewhite;
         }
         a:hover {
@@ -239,7 +235,6 @@ body.light{
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
-    border-spacing: 10px;
     .cartao {
         display: flex;
         align-items: center;
