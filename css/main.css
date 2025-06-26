@@ -94,12 +94,11 @@ body.light{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 32px;
-    background: #ffffff;
+    padding: 0 52px; /* padding topo e lados */
     height: 64px;
     border-radius: 14px;
     border: 2px solid rgb(70, 90, 75); /* Cor da borda da navbar */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.04); /* tamanho da sombra, suavização de borda e cor */
     transition: all 0.3s ease;
 }
 
@@ -136,10 +135,28 @@ body.light{
 }
 
 .centralizado {
+    padding-top: 150px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.botaoGrande { /* utilizado na pagina em construcao */
+    display: flex;
+    width: 200px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #303030;
+    border: 2px solid #b1e0bf;
+    border-radius: 14px;
+    
+}
+.botaoGrande:hover {
+    background-color: #42573f;
+    scale: 1.1;
 }
 
 .divAlinhadora { /* esse div é pra alinhar a outra div */
@@ -204,4 +221,18 @@ body.light{
     position: fixed;
     right:0;
     bottom:0;
+}
+
+.cartoes {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    border-spacing: 10px;
+    .cartao {
+        
+        width: 300px;
+        flex-direction: column;
+        border: 2px solid rgb(70, 90, 75);
+        border-radius: 18px;
+    }
 }

@@ -3,7 +3,6 @@ let trilho = document.getElementById("trilho")
 let escuro = document.querySelector('body')
 let indicador = document.getElementById("themeToggleImg")
 let btnAcessibilidade = document.getElementById("botaoAcessibilidade")
-let btnSubmit = document.getElementById("enviar")
 let btnVoltar = document.getElementById("botaoVoltar")
 trilho.addEventListener('click', ()=>{
         trilho.classList.toggle('light') // muda o tema do toggle
@@ -23,7 +22,3 @@ trilho.addEventListener('click', ()=>{
 function ativaAcessibilidade() {
         document.body.classList.toggle('acessibilidade')
 }
-
-btnSubmit.addEventListener('click', ()=>{
-        window.location.href = "/html/construcao.html";
-})
