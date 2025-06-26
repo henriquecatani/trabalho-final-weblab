@@ -16,6 +16,12 @@ body{
         background-color: rgb(70, 90, 75);
         transition: 0.75s;
     }
+    a {
+    color: antiquewhite;
+    }
+    a:hover {
+        color:#c7dfce;
+    }
     transition: 0.75s;
 }
 
@@ -38,10 +44,19 @@ body.light{
             color: #000000;
         }
         a:hover {
-            color:rgb(5, 46, 14);
+            color:rgb(33, 116, 51);
         }
     }
+    .cartao {
+        background-color: #b1e0bf;
+    }
     transition: 0.75s;
+    a {
+        color: #000000;
+    }
+    a:hover {
+        color:rgb(33, 116, 51);
+    }
     
 }   
 
@@ -90,6 +105,8 @@ body.light{
 
 /* fim_fontes */
 
+
+
 .topo {
     display: flex;
     align-items: center;
@@ -105,12 +122,7 @@ body.light{
 .logo img {
     height: 60px;
 }
-.classImagemFotos { /* para ajeitar as fotos de perfil */
-    display: flex;
-    width: 250px;
-    height: 300px;
-    border-radius: 50%;
-}
+
 
 .menu {
     display: flex;
@@ -190,7 +202,7 @@ body.light{
     font-size: 400%;
     margin-bottom: 0cm;
 }
-.mainTitulo {
+.mainTitulo { /* parte com titulo grande, subtitulo e indice na tela inical */
     margin-top: 50px;
     display: flex;
     flex-direction: column;
@@ -208,7 +220,7 @@ body.light{
         align-items: center;
         justify-content: space-evenly;
         a {
-            text-decoration: none !important;
+            text-decoration: none !important; /*remove decoração do link*/
             color: antiquewhite;
         }
         a:hover {
@@ -223,16 +235,24 @@ body.light{
     bottom:0;
 }
 
-.cartoes {
+.cartoes { /* cartoes dos membros do grupo */
     display: flex;
     justify-content: space-evenly;
     margin-top: 100px;
     border-spacing: 10px;
     .cartao {
-        
+        display: flex;
+        align-items: center;
         width: 300px;
         flex-direction: column;
         border: 2px solid rgb(70, 90, 75);
         border-radius: 18px;
+        background-color: #001f13;
     }
+}
+
+.classImagemFotos { /* para ajeitar as fotos de perfil */
+    height: 300px;
+    border-radius: 10%;
+    background-image: ;
 }
